@@ -1,0 +1,86 @@
+[
+{
+    "prob":1,
+    "activity":"onecloud.cn.xiaohui.main.LoadingActivity",
+    "times":1,
+    "actions":[
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/btn_no']",
+            "action":"CLICK",
+            "throttle":1000
+        },
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/btn_no']",
+            "action":"CLICK",
+            "throttle":1000
+        },
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/btn_ok']",
+            "action":"CLICK",
+            "throttle":2000
+        },
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/btn_ok']",
+            "action":"CLICK",
+            "throttle":5000
+        }
+    ]
+},
+{
+    "prob":1,
+    "activity":"onecloud.cn.xiaohui.main.FirstRunAdsActivity",
+    "times":1,
+    "actions":[
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/ad']",
+            "action":"SCROLL_RIGHT_LEFT",
+            "throttle":1000
+        },
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/ad']",
+            "action":"SCROLL_RIGHT_LEFT",
+            "throttle":1000
+        },
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/ad']",
+            "action":"CLICK",
+            "throttle":1000
+        }
+    ]
+},
+{
+    "prob":1,
+    "activity":"onecloud.cn.xiaohui.main.LoginActivity",
+    "times":1,
+    "actions":[
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/etMobile']",
+            "action":"CLICK",
+            "clearText":true,
+            "text":"13450202019",
+            "throttle":1000
+        },
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/tv_account_login']",
+            "action":"CLICK",
+            "throttle":1000
+        },
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/etPwd']",
+            "action":"CLICK",
+            "text":"123456",
+            "throttle":1000
+        },
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/cb_isSelected']",
+            "action":"CLICK",
+            "throttle":500
+        },
+        {
+            "xpath":"//*[@resource-id='onecloud.cn.xiaohui.rc:id/login_submit_btn']",
+            "action":"CLICK",
+            "throttle":1000
+        }
+    ]
+}
+]

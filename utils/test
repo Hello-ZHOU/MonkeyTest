@@ -1,0 +1,268 @@
+[
+{
+    'name': 'TestSuite',
+    'id': 0,
+    'caseTotal': 2,
+    'cases': [
+    {
+        'name': '欢迎页',
+        'id': 0,
+        'YN': 'Y',
+        'stepTotal': 8,
+        'steps': [
+        {
+            'name': '等待弹窗显示5s',
+            'desc': '等待弹窗5s倒计时',
+            'option': 'sleep',
+            'el_method': '',
+            'element': '',
+            'value': '5',
+            'YN': 'Y',
+            'as_el_method': 'xpath',
+            'as_element': 'onecloud.cn.xiaohui.rc:id/btn_no',
+            'as_method': '等于',
+            'as_expected': '登录'
+        },
+        {
+            'name': '点击暂不使用',
+            'desc': '点击用户协议弹窗的“暂不使用”',
+            'option': 'click',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/btn_no',
+            'value': '',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '不等于',
+            'as_expected': ''
+        },
+        {
+            'name': '点击仍不同意',
+            'desc': '点击用户协议二级弹窗的“仍不同意”',
+            'option': 'click',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/btn_no',
+            'value': '',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '点击再次查看',
+            'desc': '点击用户协议三级弹窗的“再次查看”',
+            'option': 'click',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/btn_ok',
+            'value': '',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '点击同意',
+            'desc': '点击用户协议弹窗的“同意”',
+            'option': 'click',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/btn_ok',
+            'value': '',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '等待5s',
+            'desc': '等待5秒',
+            'option': 'sleep',
+            'el_method': '',
+            'element': '',
+            'value': 5.0,
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '左滑',
+            'desc': '向左滑动屏幕2次',
+            'option': 'swipe_left',
+            'el_method': '',
+            'element': '',
+            'value': 2.0,
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '点击立即体验',
+            'desc': '点击欢迎页“立即体验”',
+            'option': 'click',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/ad',
+            'value': '123',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        }]
+    },
+    {
+        'name': '登录页',
+        'id': 1,
+        'YN': 'Y',
+        'stepTotal': 7,
+        'steps': [
+        {
+            'name': '输入小慧账号',
+            'desc': '输入登录的手机号',
+            'option': 'sendkeys',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/etMobile',
+            'value': '18320001445',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '勾选用户协议',
+            'desc': '点击用户协议勾选按钮',
+            'option': 'click',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/cb_isSelected',
+            'value': '',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '点击密码登录',
+            'desc': '点击切换为密码登录',
+            'option': 'click',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/tv_account_login',
+            'value': '',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '等待1s',
+            'desc': '等待1秒',
+            'option': 'sleep',
+            'el_method': '',
+            'element': '',
+            'value': 1.0,
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '输入密码',
+            'desc': '输入登录的密码',
+            'option': 'sendkeys',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/etPwd',
+            'value': '123456',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '点击密码可视按钮',
+            'desc': '点击密码可视按钮',
+            'option': 'click',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/text_input_end_icon',
+            'value': '',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        },
+        {
+            'name': '点击登录',
+            'desc': '点击登录按钮',
+            'option': 'click',
+            'el_method': 'id',
+            'element': 'onecloud.cn.xiaohui.rc:id/login_submit_btn',
+            'value': '',
+            'YN': 'Y',
+            'as_el_method': '',
+            'as_element': '',
+            'as_method': '',
+            'as_expected': ''
+        }]
+    }]
+}]
+
+
+//status：0未执行、1通过、2失败
+[
+    {
+        'sheet_id': 1,
+        'status': 1
+        'pass_percent': 1
+        'data':[
+            {
+                'case_id': 01,
+                'status': 1,
+                'pass_percent':1
+                'data': [
+                    {
+                        'step_id': 001,
+                        'status': 1,
+                    },
+                    {
+                        'step_id': 002,
+                        'status': 2,    
+                    },
+                    {
+                        'step_id': 003,
+                        'status': 0,
+                    },
+                    {.....}
+                ]
+            },
+            {
+                'case_id': 02,
+                'status': 0,
+                'pass_percent':
+                'data': []
+            },
+            {
+                'case_id': 03,
+                'status': 2,
+                'pass_percent': 0.85
+                'data': []
+            },
+            {.....}
+        ]
+    },
+    {
+        'sheet_id': 2,
+        'status': 2
+        'pass_percent': 0.50
+        'data':[]
+    }
+]
+
